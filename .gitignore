@@ -12,6 +12,7 @@
 *.gcda
 *.gcno
 *.gcov
+*.genm
 
 /example
 /example64
