@@ -12,7 +12,7 @@
 *.gcda
 *.gcno
 *.gcov
-*.genm
+*.llir
 
 /example
 /example64

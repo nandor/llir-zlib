@@ -1,4 +1,4 @@
-# Makefile for genm-zlib
+# Makefile for llir-zlib
 
 RANLIB=ranlib
 
@@ -123,7 +123,7 @@ minigzip64$(EXE): minigzip64.o $(STATICLIB)
 	$(CC) $(CFLAGS) -o $@ minigzip64.o $(TEST_LDFLAGS)
 
 clean:
-	rm -f *.o *.genm \
+	rm -f *.o *.llir \
 		 example$(EXE) minigzip$(EXE) example64$(EXE) minigzip64$(EXE) \
 	   libz.* foo.gz
 
