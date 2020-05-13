@@ -53,7 +53,7 @@ libz.a: $(OBJS)
 	-@ ($(RANLIB) $@ || true) >/dev/null 2>&1
 
 libz.so: $(OBJD)
-	$(LD) $(LDFLAGS) -shared -o $@ $^
+	$(CC) $(LDFLAGS) -shared -o $@ $^
 
 example.o: $(SRCDIR)test/example.c $(SRCDIR)zlib.h zconf.h
 	$(CC) $(CFLAGS) $(ZINCOUT) -c -o $@ $(SRCDIR)test/example.c
